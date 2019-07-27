@@ -24,7 +24,9 @@ class Patient
     end
   end
   
-  
+  def doctors
+    Appointment.all.map 
+  end
   
   
 end
