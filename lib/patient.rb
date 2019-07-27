@@ -4,7 +4,7 @@ class Patient
   
   ALL = []
   
-  def initialize(name, doctor, date)
+  def initialize(name)
     @name = name 
     @patient = patient 
     @date = date 
