@@ -21,6 +21,12 @@ class Doctor
     end
   end
   
+  def patients
+    Appointments.all.map |appointment|
+      appointment.doctor << doctor 
+    end
+  end
+  
   def self.all 
     ALL_DOCTORS
   end
