@@ -23,8 +23,8 @@ class Doctor
   end
   
   def patients
-    Appointment.all.map do |appointment| 
-      appointment.patient
+    Appointment.all.map do |appointment| #has many patients, through appointments
+      appointment.patient               #return the method attached to the instance 
     end
   end
   
